@@ -6,9 +6,8 @@ Tập lệnh này có thể hoạt động cả trên Windows lẫn Android (Ter
 
 ```
 
-pip install requirements.txt
-
-python ndbiaw.py
+> install.bat
+> start.bat
 
 ```
 
