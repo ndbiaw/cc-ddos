@@ -1,2 +1,2 @@
 echo @off
-pip3 install -r requirements.tx
+pip3 install -r requirements.txt
