@@ -4,11 +4,20 @@ Một tập lệnh Python để DDOS một trang web bằng nhiều phương ph�
 
 Tập lệnh này có thể hoạt động cả trên Windows lẫn Android (Termux), dưới đây là hướng dẫn:
 
+Windows:
+
 ```
 
 > install.bat
 > start.bat
 
+```
+
+Termux/Linux Core
+
+```
+pip3 install -r requirements.txt
+python3 cc.py -h
 ```
 
 # Important!!!
