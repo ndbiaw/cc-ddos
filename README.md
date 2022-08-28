@@ -4,6 +4,7 @@ Một tập lệnh Python để DDOS một trang web bằng nhiều phương ph�
 
 Tập lệnh này có thể hoạt động cả trên Windows lẫn Android (Termux), dưới đây là hướng dẫn:
 
+Sử dụng phương pháp dưới đây sẽ chạy tập lệnh với cài đặt được cài trước tự động và sử dụng toàn bộ tài nguyên mạng để mang lại sức tấn công lớn nhất. Sử dụng script thủ công để có thể tuỳ chỉnh tấn công! 
 
 Windows:
 
