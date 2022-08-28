@@ -8,7 +8,7 @@ Sử dụng phương pháp dưới đây sẽ chạy tập lệnh với cài đ�
 
 Windows:
 
-Lưu ý: Tập lệnh DDoS này chỉ hoạt động với Python 3.7.x trở xuống để tránh lỗi check proxy bị trống. Phiên bản khuyến nghị là [Python 3.7.13](https://www.python.org/downloads/release/python-3713/), nên tải trên Windows trước khi sử dụng!
+Lưu ý: Tập lệnh DDoS này chỉ hoạt động với Python 3.7.x trở xuống để tránh lỗi check proxy bị trống. Phiên bản khuyến nghị là [Python 3.7.9](https://www.python.org/downloads/release/python-379/), nên tải trên Windows trước khi sử dụng!
 
 ```
 
