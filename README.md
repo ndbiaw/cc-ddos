@@ -4,9 +4,10 @@ Một tập lệnh Python để DDOS một trang web bằng nhiều phương ph�
 
 Tập lệnh này có thể hoạt động cả trên Windows lẫn Android (Termux), dưới đây là hướng dẫn:
 
-Lưu ý: Tập lệnh DDoS này chỉ hoạt động với Python 3.7.x trở xuống. Phiên bản khuyến nghị là [Python 3.7.13](https://www.python.org/downloads/release/python-3713/)
 
 Windows:
+
+Lưu ý: Tập lệnh DDoS này chỉ hoạt động với Python 3.7.x trở xuống để tránh lỗi check proxy bị trống. Phiên bản khuyến nghị là [Python 3.7.13](https://www.python.org/downloads/release/python-3713/), nên tải trên Windows trước khi sử dụng!
 
 ```
 
@@ -18,8 +19,12 @@ Windows:
 Termux/Linux Core
 
 ```
-pip3 install -r requirements.txt
-python3 cc.py -h
+apt-get install git -y
+git clone https://github.com/ndbiaw/cc-ddos.git
+cd cc-ddos
+chmod +x ./
+./install.sh
+./start.sh
 ```
 
 # Important!!!
