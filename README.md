@@ -4,6 +4,8 @@ Một tập lệnh Python để DDOS một trang web bằng nhiều phương ph�
 
 Tập lệnh này có thể hoạt động cả trên Windows lẫn Android (Termux), dưới đây là hướng dẫn:
 
+Lưu ý: Tập lệnh DDoS này chỉ hoạt động với Python 3.7.x trở xuống. Phiên bản khuyến nghị là [Python 3.7.13][https://www.python.org/downloads/release/python-3713/]
+
 Windows:
 
 ```
