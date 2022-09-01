@@ -13,8 +13,6 @@ Test (01/09/2022):
 
 Windows:
 
-Lưu ý: Tập lệnh DDoS này chỉ hoạt động với Python 3.7.x trở xuống để tránh lỗi check proxy bị trống. Phiên bản khuyến nghị là [Python 3.7.9](https://www.python.org/downloads/release/python-379/), nên tải trên Windows trước khi sử dụng!
-
 ```
 
 > install.bat
@@ -25,12 +23,7 @@ Lưu ý: Tập lệnh DDoS này chỉ hoạt động với Python 3.7.x trở xu
 Termux/Linux Core
 
 ```
-apt-get install git -y
-git clone https://github.com/ndbiaw/cc-ddos.git
-cd cc-ddos
-chmod +x ./
-./install.sh
-./start.sh
+Đã dùng CLI thì cần gì hướng dẫn đúng không =)) Gà quá thì mở tệp .bat lên mà đọc =))
 ```
 
 # Important!!!
