@@ -6,7 +6,7 @@ Tập lệnh này có thể hoạt động cả trên Windows, Linux Core lẫn 
 
 Sử dụng phương pháp dưới đây sẽ chạy tập lệnh với cài đặt được cài trước tự động và sử dụng toàn bộ tài nguyên mạng để mang lại sức tấn công lớn nhất. Sử dụng script thủ công để có thể tuỳ chỉnh tấn công! 
 
-Test:
+Test (01/09/2022):
 ![image](https://user-images.githubusercontent.com/59746573/187913844-ff23d6f2-e4fb-4ad5-8f6b-1b73ab1f2aa6.png)
 ![image](https://user-images.githubusercontent.com/59746573/187913864-dd72e3ff-70ad-444f-a051-76e6dc659f97.png)
 
