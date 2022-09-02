@@ -33,6 +33,7 @@ This script is for educational purposes only. I am not responsible for the damag
 ```
 
 Based on CC-attack by Leeon123
+proxy-scraper-checker by monosans
 
 ```
 
