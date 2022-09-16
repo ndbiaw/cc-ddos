@@ -243,7 +243,7 @@ class ProxyScraperChecker:
                 async with ProxyConnector.from_url(proxy_url) as connector:
                     async with ClientSession(connector=connector) as session:
                         async with session.get(
-                            "http://ip-api.com/json/?fields=8217",
+                            "http://ip-api.com/json/?fields=61439",
                             timeout=self.timeout,
                             raise_for_status=True,
                         ) as response:
