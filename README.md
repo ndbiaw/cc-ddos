@@ -17,13 +17,15 @@ Windows:
 
 > install.bat
 > start.bat
-
+You can use extension proxy downloader and checker with start_proxy.bat instead of start.bat
 ```
 
 Termux/Linux Core
 
 ```
-Đã dùng CLI thì cần gì hướng dẫn đúng không =)) Gà quá thì mở tệp .bat lên mà đọc =))
+> install.sh
+> start.sh
+You can use extension proxy downloader and checker with start_proxy.sh instead of start.sh
 ```
 
 # Important!!!
