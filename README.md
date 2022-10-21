@@ -16,29 +16,27 @@ Chương trình này phụ thuộc vào các chương trình khác như [Python]
 
 Trên Windows, đối với người dùng cơ bản thì bạn chỉ cần tải xuống [Python](https://www.python.org/downloads/) và cài đặt, lưu ý bạn cần thêm Python vào PATH để tập lệnh có thể hoạt động (bạn có thể chọn tùy chọn đó trong trình cài đặt của Python).
 
-Đối với người dùng Termux/Linux Core, bạn có thể cài đặt các phần mềm cần thiết bằng lệnh sau đây (đối với người dùng Termux, thay `apt` thành `pkg`). Những lệnh dưới đây giả định rằng bạn đang sử dụng với đặt quyền root:
+Đối với người dùng Termux/Linux Core, bạn có thể cài cái phần mềm cần thiết bằng lệnh sau đây (đối với người dùng Termux, thay `apt` thành `pkg`). Những lệnh dưới đây giả định rằng bạn đang sử dụng với đặt quyền root:
 
 ```
 > apt update && apt upgrade -y && apt install python3 python3-pip git wget unzip -y
 ```
 
-Sau đó bạn có thể sử dụng tập lệnh bằng cách sau:
-
-Windows:
+**Windows**:
 
 ```
 > start.bat
 You can use extension proxy downloader and checker with start_proxy.bat instead of start.bat
 ```
 
-Termux/Linux Core. Những lệnh dưới đây giả định rằng bạn đang sử dụng với đặc quyền root và đã đặt quyền truy cập cho tất cả các tệp cần thiết (`start.sh`, `socks5.sh`, `socks4.sh`, `http.sh`) thành có thể thực thi:
+**Termux/Linux Core**. Những lệnh dưới đây giả định rằng bạn đang sử dụng với đặc quyền root và đã đặt quyền truy cập cho tất cả các tệp cần thiết (`start.sh`, `socks5.sh`, `socks4.sh`, `http.sh`) thành có thể thực thi:
 
 ```
 > start.sh
 You can use extension proxy downloader and checker with start_proxy.sh instead of start.sh
 ```
 
-Headless Online Linux Shell. Những lệnh dưới đây giả định rằng bạn đang sử dụng với đặc quyền root:
+**Online Headless Linux Shell**. Những lệnh dưới đây giả định rằng bạn đang sử dụng với đặc quyền root:
 
 ```
 > git clone https://github.com/ndbiaw/cc-ddos.git
