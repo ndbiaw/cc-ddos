@@ -16,22 +16,24 @@ from aiohttp_socks import ProxyConnector
 from rich.console import Console
 from rich.progress import (
     BarColumn,
+    MofNCompleteColumn,
     Progress,
     TaskID,
+    TaskProgressColumn,
     TextColumn,
-    TimeRemainingColumn,
 )
 from rich.table import Table
 
 
 class Proxy:
     __slots__ = (
-        "socket_address",
+        "geolocation",
         "ip",
         "is_anonymous",
-        "geolocation",
+        "socket_address",
         "timeout",
     )
+    timeout: float
 
     def __init__(self, socket_address: str, ip: str) -> None:
         """
@@ -40,9 +42,6 @@ class Proxy:
         """
         self.socket_address = socket_address
         self.ip = ip
-        self.is_anonymous: Optional[bool] = None
-        self.geolocation = "|?|?|?"
-        self.timeout = float("inf")
 
     def update(self, data: Mapping[str, str]) -> None:
         """Set geolocation and is_anonymous.
@@ -50,14 +49,10 @@ class Proxy:
         Args:
             data: Response from ip-api.com.
         """
-        country = data.get("country") or "?"
-        region = data.get("regionName") or "?"
-        city = data.get("city") or "?"
-        self.geolocation = f"|{country}|{region}|{city}"
-
-        query = data.get("query")
-        if query:
-            self.is_anonymous = self.ip != query
+        self.is_anonymous = self.ip != data["query"]
+        self.geolocation = "|{}|{}|{}".format(
+            data["country"], data["regionName"], data["city"]
+        )
 
     def __eq__(self, other: object) -> bool:
         if not isinstance(other, Proxy):
@@ -65,11 +60,11 @@ class Proxy:
         return self.socket_address == other.socket_address
 
     def __hash__(self) -> int:
-        return hash(("socket_address", self.socket_address))
+        return hash(self.socket_address)
 
 
 class Folder:
-    __slots__ = ("path", "for_anonymous", "for_geolocation")
+    __slots__ = ("for_anonymous", "for_geolocation", "path")
 
     def __init__(self, path: Path, folder_name: str) -> None:
         self.path = path / folder_name
@@ -86,11 +81,11 @@ class Folder:
         self.path.mkdir(parents=True, exist_ok=True)
 
 
-def speed_sorting_key(proxy: Proxy) -> float:
+def timeout_sort_key(proxy: Proxy) -> float:
     return proxy.timeout
 
 
-def alphabet_sorting_key(proxy: Proxy) -> Tuple[int, ...]:
+def natural_sort_key(proxy: Proxy) -> Tuple[int, ...]:
     return tuple(map(int, proxy.socket_address.replace(":", ".").split(".")))
 
 
@@ -248,6 +243,8 @@ class ProxyScraperChecker:
                             raise_for_status=True,
                         ) as response:
                             data = await response.json()
+            proxy.timeout = perf_counter() - start
+            proxy.update(data)
         except Exception as e:
             # Too many open files
             if isinstance(e, OSError) and e.errno == 24:
@@ -256,9 +253,6 @@ class ProxyScraperChecker:
                 )
 
             self.proxies[proto].remove(proxy)
-        else:
-            proxy.timeout = perf_counter() - start
-            proxy.update(data)
         progress.update(task, advance=1)
 
     async def fetch_all_sources(self, progress: Progress) -> None:
@@ -271,8 +265,8 @@ class ProxyScraperChecker:
         }
         headers = {
             "User-Agent": (
-                "Mozilla/5.0 (Windows NT 10.0; rv:102.0)"
-                + " Gecko/20100101 Firefox/102.0"
+                "Mozilla/5.0 (Windows NT 10.0; rv:105.0)"
+                + " Gecko/20100101 Firefox/105.0"
             )
         }
         async with ClientSession(headers=headers) as session:
@@ -352,7 +346,7 @@ class ProxyScraperChecker:
     def sorted_proxies(self) -> Dict[str, List[Proxy]]:
         key: Union[
             Callable[[Proxy], float], Callable[[Proxy], Tuple[int, ...]]
-        ] = (speed_sorting_key if self.sort_by_speed else alphabet_sorting_key)
+        ] = (timeout_sort_key if self.sort_by_speed else natural_sort_key)
         return {
             proto: sorted(proxies, key=key)
             for proto, proxies in self.proxies.items()
@@ -363,9 +357,8 @@ class ProxyScraperChecker:
         return Progress(
             TextColumn("[progress.description]{task.description}"),
             BarColumn(),
-            TextColumn("[progress.percentage]{task.percentage:3.0f}%"),
-            TextColumn("[blue][{task.completed}/{task.total}]"),
-            TimeRemainingColumn(compact=True),
+            TaskProgressColumn(),
+            MofNCompleteColumn(),
             console=self.console,
         )
 
