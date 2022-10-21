@@ -4,6 +4,7 @@ echo Nhan Enter de tiep tuc. Sau khi an Enter se khoi chay 3 quy trinh tan cong 
 set /p SETURL="Nhap URL trang web can tan cong: "
 set PROXY=.\proxies\
 set VERIFY=
+python proxy.py
 pause
 start socks5.bat
 start socks4.bat
