@@ -1,4 +1,7 @@
-<GitHubButton href="https://github.com/ndbiaw/cc-ddos" data-color-scheme="no-preference: dark_high_contrast; light: light; dark: dark_high_contrast;" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star ndbiaw/cc-ddos on GitHub">Star</GitHubButton>
+<!-- Place this tag where you want the button to render. -->
+<a class="github-button" href="https://github.com/ndbiaw/cc-ddos" data-color-scheme="no-preference: dark_high_contrast; light: light; dark: dark_high_contrast;" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star ndbiaw/cc-ddos on GitHub">Star</a>
+<!-- Place this tag where you want the button to render. -->
+<a class="github-button" href="https://github.com/ndbiaw/cc-ddos" data-color-scheme="no-preference: dark_high_contrast; light: light; dark: dark_high_contrast;" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star ndbiaw/cc-ddos on GitHub">Star</a>
 
 # cc-ddos
 Một tập lệnh Python để DDOS một trang web bằng nhiều phương pháp HTTP Flood, một trang web bình thường chỉ cần 5s để sập hoàn toàn!
