@@ -14,7 +14,6 @@ Test (01/09/2022):
 Windows:
 
 ```
-
 > install.bat
 > start.bat
 You can use extension proxy downloader and checker with start_proxy.bat instead of start.bat
