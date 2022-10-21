@@ -41,7 +41,7 @@ You can use extension proxy downloader and checker with start_proxy.sh instead o
 ```
 > git clone https://github.com/ndbiaw/cc-ddos.git
 You can download the Linux version with the following command (just to make the file index neater)
-> wget https://github.com/ndbiaw/cc-ddos/releases/download/v2.0-stable/Linux.zip
+> wget https://github.com/ndbiaw/cc-ddos/releases/download/v2.0-stable-linux-windows/Linux.zip
 > unzip ./Linux.zip
 Then you can follow the instructions like in Termux/Linux Core.
 
