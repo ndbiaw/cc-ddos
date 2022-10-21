@@ -16,7 +16,7 @@ Chương trình này phụ thuộc vào các chương trình khác như [Python]
 
 Trên Windows, đối với người dùng cơ bản thì bạn chỉ cần tải xuống [Python](https://www.python.org/downloads/) và cài đặt, lưu ý bạn cần thêm Python vào PATH để tập lệnh có thể hoạt động (bạn có thể chọn tùy chọn đó trong trình cài đặt của Python).
 
-Đối với người dùng Termux/Linux Core, bạn có thể cài cái phần mềm cần thiết bằng lệnh sau đây (đối với người dùng Termux, thay `apt` thành `pkg`). Những lệnh dưới đây giả định rằng bạn đang sử dụng với đặt quyền root:
+Đối với người dùng Termux/Linux Core, bạn có thể cài các phần mềm cần thiết bằng lệnh sau đây (đối với người dùng Termux, thay `apt` thành `pkg`). Những lệnh dưới đây giả định rằng bạn đang sử dụng với đặt quyền root:
 
 ```
 > apt update && apt upgrade -y && apt install python3 python3-pip git wget unzip -y
