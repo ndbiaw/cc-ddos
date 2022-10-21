@@ -1,4 +1,5 @@
-**Xin hãy Start repo này nếu bạn cảm thấy hữu ích :)**
+**Xin hãy Start repo này nếu bạn cảm thấy hữu ích, vì nó miễn phí :)**
+
 Thông tin donate trong release
 
 # cc-ddos
