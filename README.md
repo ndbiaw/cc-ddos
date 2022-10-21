@@ -1,5 +1,7 @@
+<GitHubButton href="https://github.com/ndbiaw/cc-ddos" data-color-scheme="no-preference: dark_high_contrast; light: light; dark: dark_high_contrast;" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star ndbiaw/cc-ddos on GitHub">Star</GitHubButton>
 # cc-ddos
 Một tập lệnh Python để DDOS một trang web bằng nhiều phương pháp HTTP Flood, một trang web bình thường chỉ cần 5s để sập hoàn toàn!
+
 # Cách Dùng:
 
 Tập lệnh này có thể hoạt động cả trên Windows, Linux Core lẫn Android (Termux), dưới đây là hướng dẫn:
