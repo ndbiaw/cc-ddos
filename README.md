@@ -15,7 +15,7 @@ Test (01/09/2022):
 ![image](https://user-images.githubusercontent.com/59746573/187913844-ff23d6f2-e4fb-4ad5-8f6b-1b73ab1f2aa6.png)
 ![image](https://user-images.githubusercontent.com/59746573/187913864-dd72e3ff-70ad-444f-a051-76e6dc659f97.png)
 
-Tải xuống phiên bản phù hợp với hệ điều hành của bạn [tại đây](https://github.com/ndbiaw/cc-ddos/releases/tag/v2.0-stable)
+Tải xuống phiên bản phù hợp với hệ điều hành của bạn [tại đây](https://github.com/ndbiaw/cc-ddos/releases/tag/v2.0-stable-linux-windows)
 
 Chương trình này phụ thuộc vào các chương trình khác như [Python](https://www.python.org/downloads/), [Git](https://git-scm.com/downloads) hoặc [7-Zip](https://www.7-zip.org/) (7-Zip chỉ sử dụng để giải nén các bản phát hành, bạn có thể dùng WinRAR thay thế).
 
