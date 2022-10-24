@@ -6,4 +6,4 @@ PROXY="./"
 VERIFY="-down -check"
 export URL PROXY VERIFY
 pip3 install -r requirements.txt
-./socks5.sh "$URL" "$PROXY" "$VERIFY" && ./socks4.sh "$URL" "$PROXY" "$VERIFY" && ./http.sh "$URL" "$PROXY" "$VERIFY"
+./socks5.sh "$URL" "$PROXY" "$VERIFY" & ./socks4.sh "$URL" "$PROXY" "$VERIFY" & ./http.sh "$URL" "$PROXY" "$VERIFY"
