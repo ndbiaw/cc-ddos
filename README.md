@@ -30,14 +30,14 @@ Trên Windows, đối với người dùng cơ bản thì bạn chỉ cần tả
 **Windows**:
 
 ```
-> start.bat
+> start_windows.bat
 You can use extension proxy downloader and checker with start_proxy.bat instead of start.bat
 ```
 
-**Termux/Linux Core**. Những lệnh dưới đây giả định rằng bạn đang sử dụng với đặc quyền root và đã đặt quyền truy cập cho tất cả các tệp cần thiết (`start.sh`, `socks5.sh`, `socks4.sh`, `http.sh`) thành có thể thực thi:
+**Termux/Linux Core**. Những lệnh dưới đây giả định rằng bạn đang sử dụng với đặc quyền root và đã đặt quyền truy cập cho tất cả các tệp cần thiết (`start_linux.sh`, `socks5.sh`, `socks4.sh`, `http.sh`) thành có thể thực thi:
 
 ```
-> start.sh
+> start_linux.sh
 You can use extension proxy downloader and checker with start_proxy.sh instead of start.sh
 ```
 
