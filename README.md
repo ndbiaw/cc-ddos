@@ -2,6 +2,8 @@
 
 Thông tin donate trong release
 
+Tập lệnh vẫn hoạt động bình thường, đã kiểm thử vào năm 2025.
+
 # cc-ddos
 Một tập lệnh Python để DDOS một trang web bằng nhiều phương pháp HTTP Flood, một trang web bình thường chỉ cần 5s để sập hoàn toàn!
 
